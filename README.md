@@ -147,6 +147,13 @@ After the NVIDIA CUDA Toolkit is installed restart the computer.
 
 Now that the system NVIDIA drivers are installed the necessary requirements can be stepped through or the different machine learning backends in order (from easiest to hardest).
 
+add the given directories to your ```PATH``` and ```LD_LIBRARY_PATH``` to your environment, e.g. ```.bashrc```.
+
+```
+export PATH=/usr/local/cuda-10.1/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64:$LD_LIBRARY_PATH
+```
+
 #### PyTorch
 
 PyTorch makes things very easy by [packaging all of the necessary CUDA libraries with its binary distirbutions](https://discuss.pytorch.org/t/newbie-question-what-are-the-prerequisites-for-running-pytorch-with-gpu/698/3) (which is why they are so huge).
